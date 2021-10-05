@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Theme from './components/Theme';
 export default function MyFirstPage() {
   const [clicks, setClicks] = useState(0);
   const [movies, setMovies] = useState([]);
@@ -44,6 +45,7 @@ export default function MyFirstPage() {
   };
 
   return (
+    <Theme>
     <div>
       <h1>Hello World !!! </h1>
       <div className="container">
@@ -93,5 +95,6 @@ export default function MyFirstPage() {
         </div>
       </div>
     </div>
+    </Theme>
   );
 }
